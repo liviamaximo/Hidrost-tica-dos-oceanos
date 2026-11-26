@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hidrostática dos Oceanos 2.0: A Física Viva da Vida Marinha</title>
+    <title>Hidrostática dos Oceanos: A Física Viva da Vida Marinha</title>
     <!-- Tailwind CSS para layout responsivo e utilitários -->
     <script src="https://cdn.tailwindcss.com"></script>
     <!-- Fontes legíveis com fallbacks seguros -->
@@ -196,7 +196,6 @@
                         <div>
                             <div class="flex items-center gap-1.5">
                                 <span class="font-display font-bold text-base sm:text-lg text-white leading-none">Hidrostática dos Oceanos</span>
-                                <span class="px-1.5 py-0.5 rounded-md bg-sky-500/20 border border-sky-400/40 text-[10px] font-mono font-bold text-sky-200">2.0</span>
                             </div>
                             <span class="text-[11px] text-sky-300 font-medium block mt-0.5">A Física Viva da Vida Marinha</span>
                         </div>
@@ -538,9 +537,9 @@
                         <h3 class="font-display text-2xl font-bold text-white">Força de Empuxo</h3>
                         <div class="my-4 p-4 rounded-2xl bg-slate-950/80 border border-emerald-400/25 text-center">
                             <div class="math-eq text-2xl sm:text-3xl font-bold text-emerald-300">
-                                E = &rho;<sub class="text-base">água</sub> &middot; V<sub class="text-base">sub</sub> &middot; g
+                                E = &rho;<sub class="text-base">água</sub> &middot; V<sub class="text-base">des</sub> &middot; g
                             </div>
-                            <p class="text-xs text-slate-300 mt-2">Empuxo = Densidade do fluido &times; Volume deslocado &times; Gravidade</p>
+                            <p class="text-xs text-slate-300 mt-2">E = Empuxo &middot; &rho;<sub>água</sub> = densidade do fluido &middot; V<sub>des</sub> = volume de fluido deslocado (pelo corpo na água) &middot; g = gravidade</p>
                         </div>
                         <p class="text-sm text-slate-200 leading-relaxed">
                             Todo corpo submerso recebe uma força vertical para cima igual ao peso do volume de fluido que ele deslocou. Quando <strong class="text-emerald-300">E = P</strong> (empuxo neutro), o animal flutua no meio da água sem gastar energia para não afundar nem subir.
@@ -588,11 +587,20 @@
                             <div class="math-eq text-2xl sm:text-3xl font-bold text-violet-300">
                                 P<sub class="text-base">1</sub> &middot; V<sub class="text-base">1</sub> = P<sub class="text-base">2</sub> &middot; V<sub class="text-base">2</sub>
                             </div>
-                            <p class="text-xs text-slate-300 mt-2">Pressão e Volume de um gás são inversamente proporcionais</p>
+                            <p class="text-xs text-slate-300 mt-2">A temperatura constante, Pressão (P) e Volume (V) de um gás são inversamente proporcionais</p>
                         </div>
                         <p class="text-sm text-slate-200 leading-relaxed">
-                            Diferentemente de líquidos, <strong class="text-violet-300">gases são altamente compressíveis</strong>. Dobrar a pressão (10 m) reduz o volume de ar pela metade; a 90 m (10,0 atm), resta apenas 10% do volume! Isso reduz o empuxo na descida e causa barotrauma em subidas rápidas.
+                            Diferentemente dos líquidos, <strong class="text-violet-300">gases são altamente compressíveis</strong>: quando a pressão externa aumenta na descida, o gás encolhe na mesma proporção; quando a pressão cai na subida, o gás se expande. Por exemplo, <strong class="text-white">1,0 L de ar a 10 m de profundidade</strong> está sob <strong class="text-violet-200">2,0 atm</strong> — se esse mesmo ar subir até a superfície (<strong class="text-violet-200">1,0 atm</strong>, metade da pressão), ele se expande para o dobro do volume (<strong class="text-white">2,0 L</strong>). Na descida ocorre o inverso: a 90 m (10,0 atm), resta apenas 10% do volume inicial, reduzindo o empuxo.
                         </p>
+                        <div class="mt-3.5 p-3.5 rounded-2xl bg-rose-500/10 border border-rose-400/35 text-xs text-slate-200 leading-relaxed">
+                            <div class="font-display font-bold text-rose-200 mb-1 flex items-center gap-1.5">
+                                <span aria-hidden="true">⚠️</span>
+                                <span>O que é barotrauma?</span>
+                            </div>
+                            <p>
+                                É uma <strong class="text-white">lesão física em tecidos ou órgãos que armazenam ar ou gás</strong> — como pulmões, tímpanos, seios da face ou a bexiga natatória de peixes — causada pela diferença brusca entre a pressão interna desse gás e a pressão externa da água. Acontece quando o gás se comprime demais na descida (sem equalização) ou, mais perigosamente, quando se expande rápido demais na subida: em mergulhadores humanos que prendem a respiração ao subir, o ar em expansão pode romper os tecidos pulmonares; em peixes de fundo puxados rapidamente até a superfície, a bexiga natatória incha tanto que pode até empurrar o estômago para fora pela boca.
+                            </p>
+                        </div>
                     </div>
                     <div class="mt-4 pt-3.5 border-t border-slate-800 text-xs text-violet-200 flex items-start gap-2">
                         <span class="text-base" aria-hidden="true">🎈</span>
@@ -795,7 +803,7 @@
 
     <!-- Rodapé -->
     <footer class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 mt-8 border-t border-sky-400/15 text-center sm:flex sm:items-center sm:justify-between text-xs text-slate-400">
-        <div>Hidrostática dos Oceanos 2.0 • Física, Biologia Marinha &amp; Engenharia Biomimética</div>
+        <div>Hidrostática dos Oceanos • Física, Biologia Marinha &amp; Engenharia Biomimética</div>
         <div class="font-mono mt-1 sm:mt-0">&rho;<sub>mar</sub> = 1.025 kg/m³ | g = 9,81 m/s² | P<sub>0</sub> = 101.325 Pa</div>
     </footer>
 
@@ -3523,7 +3531,7 @@
                     renderQuizQuestion();
                     ensureAnimationRunning();
                 } catch (err) {
-                    console.error('Erro na inicialização do aplicativo Hidrostática 2.0:', err);
+                    console.error('Erro na inicialização do aplicativo Hidrostática dos Oceanos:', err);
                 }
             }
 
