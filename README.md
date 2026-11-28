@@ -17,6 +17,6 @@ Este projeto — incluindo seu código-fonte, design, estrutura visual, simulaç
 ## Autoria
 
 Desenvolvido por *Lívia Teixeira Campinas Maximo*  
-Contato: [github.com/liviamaximo](https://github.com/liviamaximo)
+Contato: liviatcmaximo@gmail.com
 
 
